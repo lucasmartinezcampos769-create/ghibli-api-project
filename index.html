@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli API - Proyecto Clase</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* CSS personalizado para retocar lo que Bootstrap no hace solo */
+        body { 
+            background-color: #f8f9fa; 
+        }
+        
+        .card-img-top {
+            height: 400px;      /* Forzamos a que todas las portadas midan lo mismo */
+            object-fit: cover;  /* Evita que la imagen se estire feo */
+        }
+
+        .ghibli-card {
+            transition: transform 0.3s; /* Suaviza el movimiento al pasar el ratón */
+        }
+
+        .ghibli-card:hover {
+            transform: translateY(-10px); /* Eleva la tarjeta al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark py-5 mb-5 shadow">
+        <div class="container text-center">
+            <h1 class="display-4 text-white fw-bold">Studio Ghibli Films</h1>
+            <p class="lead text-white-50">Explorando la API con Fetch y JavaScript</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="contenedor-peliculas" class="row g-4">
+            </div>
+    </main>
+
+    <footer class="text-center py-4 mt-5 border-top">
+        <p class="text-muted">&copy; 2024 - Ejercicio de API Ghibli</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
